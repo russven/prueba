@@ -1,7 +1,18 @@
-function verCategoria(nombre) {
-    alert(`Has seleccionado la categoría: ${nombre}`);
+document.addEventListener("DOMContentLoaded", () => {
+  const steps = document.querySelectorAll(".wizard-step");
+  let currentStep = 0;
+
+  function goToNextStep() {
+    steps[currentStep].classList.remove("active");
+    currentStep++;
+    if (currentStep < steps.length) {
+      steps[currentStep].classList.add("active");
+    } else {
+      document.getElementById("wizard").style.display = "none";
+    }
   }
-  
-  document.getElementById("registerBtn").addEventListener("click", function () {
-    alert("Aquí iría el formulario de registro (próximamente)");
+
+  document.querySelectorAll(".wizard-btn").forEach(btn => {
+    btn.addEventListener("click", goToNextStep);
   });
+});
