@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taper'fecto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Taper'fecto</h1>
+    <button class="button" id="registerBtn">Registrarse</button>
+  </header>
+
+  <section class="hero">
+    <h2>Comida fitness personalizada para tu estilo de vida</h2>
+    <p>Elige tus opciones favoritas entre desayunos, comidas, proteínas rápidas y batidos naturales.</p>
+  </section>
+
+  <section class="grid">
+    <div class="card" style="background-color: #f3e8ff">
+      <i class="fas fa-egg icon"></i>
+      <h3>Desayunos</h3>
+      <button class="button-outline" onclick="verCategoria('Desayunos')">Ver opciones</button>
+    </div>
+    <div class="card" style="background-color: #d1fae5">
+      <i class="fas fa-utensils icon"></i>
+      <h3>Comidas</h3>
+      <button class="button-outline" onclick="verCategoria('Comidas')">Ver opciones</button>
+    </div>
+    <div class="card" style="background-color: #ddd6fe">
+      <i class="fas fa-dumbbell icon"></i>
+      <h3>Proteínas Rápidas</h3>
+      <button class="button-outline" onclick="verCategoria('Proteínas Rápidas')">Ver opciones</button>
+    </div>
+    <div class="card" style="background-color: #bbf7d0">
+      <i class="fas fa-blender icon"></i>
+      <h3>Batidos Naturales</h3>
+      <button class="button-outline" onclick="verCategoria('Batidos Naturales')">Ver opciones</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Taper'fecto. Todos los derechos reservados.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
